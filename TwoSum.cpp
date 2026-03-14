@@ -16,6 +16,21 @@ using namespace std;
 //     }
 // }
 // two pointer solution
+vector<int> twoSum(vector<int> &nums, int target)
+{
+    vector<int> ans;
+    int len = nums.size();
+    unordered_map<int,int> mp;
+    for(int i = 0; i < len; ++i){
+        int b = target - nums[i];
+        auto it = mp.find(b);
+        if(it != mp.end()){
+            return {it->second, i};
+        }
+        mp[nums[i]] = i;
+    }
+    return {};
+}
 vector<int> twoSum ( vector<int> & numbers, int target){
     int l = 0 ;
     int r = numbers.size()-1;
