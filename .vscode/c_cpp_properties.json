@@ -1,9 +1,9 @@
 {
     "configurations": [
         {
-            "name": "MinGW-w64",
-            "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
-            "intelliSenseMode": "gcc-x64",
+            "name": "Mac",
+            "compilerPath": "/opt/homebrew/bin/g++-16",
+            "intelliSenseMode": "macos-gcc-arm64",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
